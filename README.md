@@ -26,14 +26,33 @@ Add the following command in a new line anywhere the file:
 source ~/.custom_cmd.sh
 ```
 
-Save the file and exit the terminal
+Save the file and exit the terminal.
+
+## Usage
 
 Now you can open a new terminal and try your new command ex:
 
 ```sh
+# to commit with a default message "initial commit"
 acp init
-```
+# to commit a new feature
+acp feature "commit message"
 
-```sh
-acp fix "fix a typo in user model"
+# to commit an update to existing feature
+acp update "commit message"
+
+# to commit a bugfix
+acp fix "commit message"
+
+# to commit a hotfix
+acp hotfix "commit message"
+
+# to commit a code refactor
+acp refactor "commit message"
+
+# to commit a new release
+acp package "commit message"
+
+# to commit a new or updated package
+acp release "commit message"
 ```
